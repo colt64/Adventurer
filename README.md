@@ -1,5 +1,5 @@
 
-# - Adventurer 
+# Adventurer 
 ![darkmode.png](Images/darkmode.png)
 Designed to reflect the design choices of popular tabletop adventure formats, Adventurer integrates beautifully with maps and PDFs to make running and documenting your next tabletop game easy and fun. 
 
