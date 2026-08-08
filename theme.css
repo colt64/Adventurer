@@ -92,7 +92,7 @@
 	--icon-muted: #594e4c;
 	--icon-color-hover: var(--h1-accent-color);
 	--icon-color-top: var(--background-primary);
-	--icon-color-top-focused(--background-primary-alt);
+	--icon-color-top-focused: (--background-primary-alt);
 	
 }
 
