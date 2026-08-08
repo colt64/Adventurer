@@ -1,6 +1,6 @@
 
 # - Adventurer 
-![[Pasted image 20260807175601.png]]
+![darkmode.png](Images/darkmode.png)
 Designed to reflect the design choices of popular tabletop adventure formats, Adventurer integrates beautifully with maps and PDFs to make running and documenting your next tabletop game easy and fun. 
 
 
@@ -18,11 +18,11 @@ Designed to reflect the design choices of popular tabletop adventure formats, Ad
 	- [ ] close/expand/minimize buttons
 # Screenshots
 ## Light Mode
-![[Pasted image 20260807175214.png]]
+![lightmode.png](/Images/lightmode.png)
 
 ## Dark Mode
-![[Pasted image 20260807175601.png]]
+![darkmode.png](/Images/darkmode.png)
 
 ## Canvas
 
-![[Pasted image 20260807175804.png]]
+![canvas.png](/Images/canvas.png)
