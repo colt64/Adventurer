@@ -1,7 +1,7 @@
 
 # Adventurer 
 ![Light Mode Preview](Images/lightmode.png)
-Designed to reflect the design choices of popular tabletop adventure formats, Adventurer integrates beautifully with maps and PDFs to make running and documenting your next tabletop game easy and fun. 
+Designed to reflect the design choices of popular tabletop adventure formats, Adventurer integrates beautifully with maps and PDFs to make your next tabletop game run smoothly from paper to screen. 
 
 
 <a href='https://ko-fi.com/B7X324M4VG' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
