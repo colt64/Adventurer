@@ -7,19 +7,54 @@
  
  */
 
+/* @settings
+
+name: Adventurer
+id: adventurer
+settings:
+    - 
+        id: header-shadows
+        title: Use Header Shadows?
+		description: Adds a drop shadow to h1 headers to make them pop more.
+        type: class-toggle
+        default: true
+
+	-
+		id: header-underline
+		title: Use Header Underlines?
+		description: Adds a gradient underline to h1 headers to make them pop more.
+		type: class-toggle
+		default: true
+
+*/
+
 body {
-	--background-primary: #f2ebe2;
-	--background-primary-alt: #fdf1dc;
-	--background-secondary: #ebe2da;
+	--adventurer-color-1: #f2ebe2;
+	--adventurer-color-2: #fdf1dc;
+	--adventurer-color-3: #ebe2da;
+	--adventurer-color-4: #58170D;
+	--adventurer-color-5: #e0c67f;
+	--adventurer-color-6: #9c3c05;
+	--adventurer-color-7: #ce6700;
+	--adventurer-color-8: #90021c;
+	--adventurer-color-9: black;
+	--adventurer-color-10: #333333;
+	--adventurer-canvas-color-1: #544c3f;
+	--adventurer-canvas-color-2: #0098b2;
+
+
+	--background-primary: var(--adventurer-color-1);
+	--background-primary-alt: var(--adventurer-color-11);
+	--background-secondary: var(--adventurer-color-3);
 	--background-modifier-form-field: var(--color-base-100);
-	--h1-color: #58170D;
-	--h1-accent-color: #e0c67f;
+	--h1-color: var(--adventurer-color-4);
+	--h1-accent-color: var(--adventurer-color-5);
 	--h1-variant: petite-caps;
 	--h1-font: "Arial Narrow", "Arial", sans-serif;
-	--h2-color: #9c3c05;
-	--h3-color: #ce6700;
-	--link-color: #90021c;
-	--accent-color: #800000;
+	--h2-color: var(--adventurer-color-6);
+	--h3-color: var(--adventurer-color-7);
+	--link-color: var(--adventurer-color-8);
+	/* --accent-color: #800000; */
 	--inline-title-font: "Times New Roman", serif;
 	--inline-title-size: 2.2em;
 	--inline-title-variant: petite-caps;
@@ -28,43 +63,44 @@ body {
 	--font-ui-smaller: 0.9em;
 	--callout-border-width: 3px;
 	--callout-border-color: black;
-	--fancy-border-gradient: linear-gradient(to right, var(--h1-accent-color), transparent) 1; 
-	--canvas-card-label-color: var(--h1-color);
-	--canvas-background: #544c3f;
-	--canvas-color-1: #0098b2;
-	--tab-text-color-active: var(--h1-color);
-	--tab-text-color-focused-active: var(--h1-color);
-	--titlebar-background-focused: var(--h1-color);
-	--titlebar-background: var(--h1-color);
-	--titlebar-background-focused: var(--h1-color);
-	--titlebar-background: var(--h1-color);
-	--titlebar-text-color: var(--background-primary);
-	--titlebar-text-color-focused: var(--background-primary);
+	--canvas-card-label-color: var(--adventurer-color-4);
+	--canvas-background: var(--adventurer-canvas-color-1);
+	--canvas-color-1: var(--adventurer-canvas-color-2);
+	--tab-text-color-active: var(--adventurer-color-4);
+	--tab-text-color-focused-active: var(--adventurer-color-4);
+	--titlebar-background-focused: var(--adventurer-color-4);
+	--titlebar-background: var(--adventurer-color-4);
+	--titlebar-background-focused: var(--adventurer-color-4);
+	--titlebar-text-color: var(--adventurer-color-1);
+	--titlebar-text-color-focused: var(--adventurer-color-1);
 	--tab-text-color: var(--background-secondary);
 	--tab-text-color-focused-active-current: var(--accent-color);
-	--tab-text-color-focused: var(--background-primary);
-	--icon-color: var(--h1-color);
-	--icon-color-focused: var(--background-primary-alt);
-	--ribbon-background: var(--h1-color);
-	--ribbon-background-collapsed: var(--h3-color);
-	--scrollbar-bg: var(--h1-color);
-	--scrollbar-thumb-bg: var(--h1-color);
-	--scrollbar-active-thumb-bg: var(--h2-color);
-	--text-muted: #333333;
-	--text-normal: black;
+	--tab-text-color-focused: var(--adventurer-color-1);
+	--icon-color: var(--adventurer-color-4);
+	--icon-color-focused: var(--adventurer-color-2);
+	--ribbon-background: var(--titlebar-background);
+	--ribbon-background-collapsed: var(--ribbon-background);
+	--scrollbar-bg: var(--icon-color);
+	--scrollbar-thumb-bg: var(--icon-color);
+	--scrollbar-active-thumb-bg: var(---adventurer-color-6);
+	--text-muted: var(--adventurer-color-10);
+	--text-normal: var(--adventurer-color-9);
 	--interactive-normal: var(--color-accent);
 	--icon-color-hover: var(--h1-accent-color);
-	--icon-color-top: var(--background-primary);
-	--icon-color-top-focused: var(--background-primary-alt);
-	--ribbon-icon: var(--background-primary);
-	--ribbon-icon-focused: var(--background-primary-alt);
+	--icon-color-top: var(--adventurer-color-1);
+	--icon-color-top-focused: var(--icon-color-focused);
+	--ribbon-icon: var(--adventurer-color-1);
+	--ribbon-icon-focused: var(--icon-color-focused);
 	--divider-width: 0px;
 	--tab-outline-width: 0px;
-	--background-modifier-form-field: var(--background-secondary);
+	--background-modifier-form-field: var(--adventurer-color-3);
+	--callout-background-color: var(--adventurer-color-11);
 
 	/*custom variables*/
-	--icon-color-secondary: var(--h1-color);
+	--icon-color-secondary: var(--adventurer-color-4);
 	--icon-muted: #594e4c;
+	--fancy-border-gradient: linear-gradient(to right, var(--h1-accent-color), transparent) 1; 
+
 	
 	
 }
@@ -88,12 +124,59 @@ body {
 /* } */
 
 .theme-dark {
-		--background-primary: #f2ebe2;
+	--adventurer-color-1: #15160D;
+	--adventurer-color-2: #111111;
+	--adventurer-color-3: #90021c;
+	--adventurer-color-4:#FFFFFF;
+	--adventurer-color-5:#2a2a2a;
+	--adventurer-color-6:#FDF1DC;
+	--adventurer-color-7:#F2EBE2;
+	--adventurer-color-8:#050505;
+	--adventurer-color-9: #d18a20;
+	--adventurer-color-10: #b39b6f;
+	--adventurer-color-11: #f5dcba;
 
+	--canvas-color-1: #d18a20;	
+	--canvas-color-2: #FDF1DC;
+	--canvas-color-3: #9c3c05;
+
+	--link-unresolved-color: var(--adventurer-color-6);
+
+
+	--background-primary: var(--adventurer-color-1);
+	--background-secondary: var(--adventurer-color-2);
+	--h1-accent-color: var(--adventurer-color-3);
+	--link-color: var(--adventurer-color-6);
+	--titlebar-background-focused: var(--adventurer-color-5);
+	--text-normal: var(--adventurer-color-4);
+	--titlebar-background: var(--adventurer-color-2);
+	--titlebar-text-color: var(--adventurer-color-4);
+	--titlebar-text-color-focused: var(--adventurer-color-4);
+	--h1-color: var(--adventurer-color-6);
+	--h2-color: var(--adventurer-color-6);
+	--h3-color: var(--adventurer-color-7);
+	--ribbon-background: var(--adventurer-color-2);
+	--ribbon-background-collapsed: var(--ribbon-background);
+	--ribbon-icon: var(--adventurer-color-4);
+	--ribbon-icon-focused: var(--adventurer-color-3);
+	--background-modifier-form-field: var(--adventurer-color-8);
+	--background-primary-alt: var(--adventurer-color-8);
+	--icon-color: var(--adventurer-color-7);
+	--icon-color-focused: var(--adventurer-color-3);
+	--icon-color-hover: var(--adventurer-color-3);
+	--icon-color-top: var(--icon-color);
+	--icon-color-top-focused: var(--icon-color-focused);
+	--ribbon-icon: var(--adventurer-color-1);
+	--ribbon-icon-focused: var(--icon-color-focused);
+	--text-warning: var(--adventurer-color-9);
 
 }
 
-.cm-header-1 {
+body.theme-dark {
+	--canvas-color: #58170D;
+}
+
+.header-shadows .cm-header-1 {
 	font-variant: var(--h1-variant);
 	text-shadow: 2px 2px 4px var(--h1-accent-color);
 
@@ -104,12 +187,9 @@ body .cm-line:not(.HyperMD-header) {
 	letter-spacing: var(--text-letter-spacing);
 }
 
-.callout[data-callout="pdf"] {
-    --callout-color: 250, 200,40;
-	--callout-title-color: #000000;
-}
 
-.HyperMD-header-1 {
+
+.header-underline .HyperMD-header-1 {
 	border-image: var(--fancy-border-gradient);
     border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
     padding-bottom: 2px;
@@ -126,18 +206,18 @@ div.workspace-leaf.mod-active > div > div.search-results-info > select > option{
 	font-variant: var(--h1-variant);
 }
 
-.workspace-split.mod-horizontal{ 
+.theme-light .workspace-split.mod-horizontal{ 
 	 --icon-color: var(--icon-muted); 
-	 --icon-color-focused: var(--h1-color);
+	 --icon-color-focused: var(--adventurer-color-4);
 	--tab-text-color-focused-active-current: var(--accent-color);
 	--tab-text-color: var(--background-secondary);
-	--tab-text-color-active: var(--h1-color);
+	--tab-text-color-active: var(--adventurer-color-4);
 	--tab-text-color-focused-active-current: var(--accent-color);
  } 
 
 .workspace-leaf{
 	--icon-color: var(--icon-muted);
-	--icon-color-focused: var(--h1-color);
+	--icon-color-focused: var(--adventurer-color-4);
 }
 
 /* .workspace-leaf:not(.mod-top){ */
@@ -151,6 +231,12 @@ div.workspace-leaf.mod-active > div > div.search-results-info > select > option{
 	border-color: black;
 	border-top: 0px;
 	border-bottom: 0px;
+}
+
+.callout[data-callout="pdf"] {
+    --callout-color: var(--adventurer-color-2);
+	--callout-title-color: #000000;
+	background-color: var(--callout-color);
 }
 
 .workspace-tabs.mod-top {
@@ -169,199 +255,7 @@ body > div.app-container > div.horizontal-main-container > div > div.workspace-s
 
 .inline-title {
 	text-shadow: 2px 2px 0px var(--h1-accent-color);
-	--this-border-gradient: linear-gradient(to right, var(--h1-color), transparent) 2; 
-	border-image: var(--this-border-gradient);
-    border-bottom: 4px solid var(--background-modifier-border);
-    padding-bottom: 2px;
-	
-}
-
-input[type="search"]{
-	filter: brightness(0.9);
-}
-
-/* Leaflet Plugin */
-/* sets the background of the map to be the same as the page background */
-.leaflet-container {
-	
-	background-color: var(--background-primary);
-	
-}
-
-.block-language-leaflet .leaflet-container {
-	background-color: var(--background-primary);
-}/* 
- * Adventurer Theme for Obsidian
-
- License: GPL-3.0-or-later
- By: CJ Horyza
-
- 
- */
-
-body {
-	--background-primary: #f2ebe2;
-	--background-primary-alt: #fdf1dc;
-	--background-secondary: #ebe2da;
-	--background-modifier-form-field: var(--color-base-100);
-	--h1-color: #58170D;
-	--h1-accent-color: #e0c67f;
-	--h1-variant: petite-caps;
-	--h1-font: "Arial Narrow", "Arial", sans-serif;
-	--h2-color: #9c3c05;
-	--h3-color: #ce6700;
-	--link-color: #90021c;
-	--accent-color: #800000;
-	--inline-title-font: "Times New Roman", serif;
-	--inline-title-size: 2.2em;
-	--inline-title-variant: petite-caps;
-	--font-interface: "Times New Roman", serif;
-	--font-ui-small: 1.0em;
-	--font-ui-smaller: 0.9em;
-	--callout-border-width: 3px;
-	--callout-border-color: black;
-	--fancy-border-gradient: linear-gradient(to right, var(--h1-accent-color), transparent) 1; 
-	--canvas-card-label-color: var(--h1-color);
-	--canvas-background: #544c3f;
-	--canvas-color-1: #0098b2;
-	--tab-text-color-active: var(--h1-color);
-	--tab-text-color-focused-active: var(--h1-color);
-	--titlebar-background-focused: var(--h1-color);
-	--titlebar-background: var(--h1-color);
-	--titlebar-background-focused: var(--h1-color);
-	--titlebar-background: var(--h1-color);
-	--titlebar-text-color: var(--background-primary);
-	--titlebar-text-color-focused: var(--background-primary);
-	--tab-text-color: var(--background-secondary);
-	--tab-text-color-focused-active-current: var(--accent-color);
-	--tab-text-color-focused: var(--background-primary);
-	--icon-color: var(--h1-color);
-	--icon-color-focused: var(--background-primary-alt);
-	--ribbon-background: var(--h1-color);
-	--ribbon-background-collapsed: var(--h3-color);
-	--scrollbar-bg: var(--h1-color);
-	--scrollbar-thumb-bg: var(--h1-color);
-	--scrollbar-active-thumb-bg: var(--h2-color);
-	--text-muted: #333333;
-	--text-normal: black;
-	--interactive-normal: var(--color-accent);
-	--icon-color-hover: var(--h1-accent-color);
-	--icon-color-top: var(--background-primary);
-	--icon-color-top-focused: var(--background-primary-alt);
-	--ribbon-icon: var(--background-primary);
-	--ribbon-icon-focused: var(--background-primary-alt);
-	--divider-width: 0px;
-	--tab-outline-width: 0px;
-	--background-modifier-form-field: var(--background-secondary);
-
-	/*custom variables*/
-	--icon-color-secondary: var(--h1-color);
-	--icon-muted: #594e4c;
-	
-	
-}
-
-/* OLD Light Theme */
-/* .theme-light { */
-	/* --titlebar-background-focused: var(--background-primary); */
-	/* --titlebar-background: var(--background-secondary); */
-	/* --titlebar-text-color: var(--h1-color); */
-	/* --titlebar-text-color-focused: var(--h1-color); */
-	/* --tab-text-color: var(--h1-color);	 */
-	/* --tab-text-color-focused-active-current: var(--h1-color); */
-	/* --tab-text-color-focused: var(--h1-color); */
-	/* --tab-background-color: var(--h1-color); */
-	/* --icon-color: var(--canvas-background);	 */
-	/* custom variables */
-	/* --icon-color-top: var(--canvas-background); */
-	/* --icon-color-top-focused: (--h2-color); */
-	/* --ribbon-icon: var(-canvas-background); */
-	/* --ribbon-icon-focused: var(--accent-color); */
-/* } */
-
-.theme-dark {
-		--background-primary: #f2ebe2;
-
-
-}
-
-.cm-header-1 {
-	font-variant: var(--h1-variant);
-	text-shadow: 2px 2px 4px var(--h1-accent-color);
-
-}
-
-body .cm-line:not(.HyperMD-header) {
-	--text-letter-spacing: -0.05em;
-	letter-spacing: var(--text-letter-spacing);
-}
-
-.callout[data-callout="pdf"] {
-    --callout-color: 250, 200,40;
-	--callout-title-color: #000000;
-}
-
-.HyperMD-header-1 {
-	border-image: var(--fancy-border-gradient);
-    border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
-    padding-bottom: 2px;
-}
-
-option {
-	color: black;
-	background-color: black;
-}
-div.workspace-leaf.mod-active > div > div.search-results-info > select > option{
-	color: black;
-}
-.cm-header {
-	font-variant: var(--h1-variant);
-}
-
-.workspace-split.mod-horizontal{ 
-	 --icon-color: var(--icon-muted); 
-	 --icon-color-focused: var(--h1-color);
-	--tab-text-color-focused-active-current: var(--accent-color);
-	--tab-text-color: var(--background-secondary);
-	--tab-text-color-active: var(--h1-color);
-	--tab-text-color-focused-active-current: var(--accent-color);
- } 
-
-.workspace-leaf{
-	--icon-color: var(--icon-muted);
-	--icon-color-focused: var(--h1-color);
-}
-
-/* .workspace-leaf:not(.mod-top){ */
-	/* --icon-color: green; */
-	/* --tab-text-color-focused-active-current: var(--accent-color); */
-	/* --icon-color-focused: lightblue; */
-
-/* } */
-
-.callout {
-	border-color: black;
-	border-top: 0px;
-	border-bottom: 0px;
-}
-
-.workspace-tabs.mod-top {
-	/*this was the best way I could come up with to differentiate horizontal split tabs from regular ones. Please tell me if there is a better one */
-	--icon-color: var(--icon-color-top);
-	--icon-color-focused: var(--icon-color-top-focused);
-
-}
-
-.side-dock-ribbon{
-			--icon-color: var(--ribbon-icon);
-	--icon-color-focused: var(--ribbon-icon-focused);
-}
-
-body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > div:nth-child(3) > div > div.workspace-tab-header-inner-icon
-
-.inline-title {
-	text-shadow: 2px 2px 0px var(--h1-accent-color);
-	--this-border-gradient: linear-gradient(to right, var(--h1-color), transparent) 2; 
+	--this-border-gradient: linear-gradient(to right, var(--adventurer-color-4), transparent) 2; 
 	border-image: var(--this-border-gradient);
     border-bottom: 4px solid var(--background-modifier-border);
     padding-bottom: 2px;
