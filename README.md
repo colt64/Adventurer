@@ -16,6 +16,9 @@ Designed to reflect the design choices of popular tabletop adventure formats, Ad
 - [x] Fix extraneous text and icons 
 	- [x] settings menu titlebar
 	- [x] close/expand/minimize buttons
+- [ ] Style settings 
+- [ ] Sort/Organize code
+- [ ] Simplify light mode palette 
 
 
 ## Light Mode
