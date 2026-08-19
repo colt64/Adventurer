@@ -13,7 +13,7 @@ Designed to reflect the design choices of popular tabletop adventure formats, Ad
 - [ ] check callouts
 - [x] "Dark" mode should be base theme and make a darker theme from the Canvas pallette?
 - [x] document palettes
-- [x]] Fix extraneous text and icons 
+- [x] Fix extraneous text and icons 
 	- [x] settings menu titlebar
 	- [x] close/expand/minimize buttons
 
